@@ -1,0 +1,23 @@
+
+.contact_option{
+     border: 1px solid transparent;
+     transition: 1s;
+}
+.contact_option:hover{
+     background: transparent;
+     border: rgb(29, 142, 159);
+}
+.contact_option a{
+     margin-top: 0.7rem;
+     display: inline-block;
+     font-size: 0.8em;
+}
+input,
+textarea{
+     padding: 1.5em;
+     border-radius: .5rem;
+     background: transparent;
+     border: 2px solid;
+     resize: none;
+     color: aliceblue;
+}

@@ -1,0 +1,44 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: arial;
+}
+.cardBox{
+    perspective: 500px;
+    margin: 15px;
+}
+.card{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background:#fff;
+    transform-style: preserve-3d;
+    transition: .5s ease;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.5);
+}
+.facebook{
+    color: #3b5998;
+}
+.card-front, .card-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.cardBox:hover .card{
+   transform: rotateY(180deg); 
+}
+.card-back{
+    transform: rotateY(180deg);
+}
