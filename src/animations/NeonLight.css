@@ -1,33 +1,20 @@
 .neon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin:0;
-    padding: 0 20px;
-    font-size: 6em;
+    /* font-size: 4em; */
     color: aliceblue;
-    text-shadow: 0 0 20px #f0005b;
+    text-shadow: 0 0 30px #f0005b;
 }
 .neon:after{
-    content: attr(data-tetx);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
+    /* content: attr(data-text); */
     z-index: -1;
     color: #f0005b;
-    filter: blur(15px);
+    filter: blur(20px);
 }
 .neon:before{
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: #fe3a80;
     z-index: -2;
     opacity: .5;
-    filter: blur(40px);
+    filter: blur(50px);
 }

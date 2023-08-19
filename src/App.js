@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css'
-import Main from './protfoil/layout/main'
+import Main from './layout/main'
 function App() {
   return (
     <Main/>

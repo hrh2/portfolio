@@ -1,15 +1,20 @@
+.cup_container{
+    position: relative;
+}
 .cup{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: 160px;
+    width: 8rem;
+    aspect-ratio: 4/5;
     background: #fff;
+    /* background: #fff url('../assets/image11.png'); */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    z-index: 1;
 }
-.cup:before{
+.cup:after{
     content: '';
     position: absolute;
     top:0;
@@ -24,7 +29,7 @@
     box-shadow: inset 0 0 15px rgba(0,0,0,.5);
 }
 
-.cup:after{
+.cup:before{
     content: '';
     position: absolute;
     top:48%;
@@ -36,6 +41,7 @@
     border: 12px solid #fff;
     box-sizing: border-box;
     transform: translateY(-50%);
+    z-index: 2;
 }
 .plate{
     position: absolute;
@@ -62,7 +68,7 @@
     background:#fff;
     float: left;
     margin: 10px;
-    animation: animate 2s infinite linear;
+    animation: vapours 2s infinite linear;
 }
 
 .vapours li:nth-child(1){
@@ -80,7 +86,7 @@
 .vapours li:nth-child(5){
     animation-delay: .2s;
 }
-@keyframes animate{
+@keyframes vapours{
     0%{
         transform: translateY(0);
         opacity: 1;

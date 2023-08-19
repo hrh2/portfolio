@@ -1,0 +1,85 @@
+.services_item {
+    display: none;
+    opacity: 0; /* Start with opacity set to 0 */
+    transform: scaleY(0); /* Start with zero height */
+    transform-origin: top; /* Set the transformation origin to the top */
+}
+
+.services_box {
+    transition: 0.5s;
+}
+
+.services_box:hover .services_item {
+    display: block;
+    color: aliceblue;
+    animation: showContent 0.5s forwards; /* Adjusted animation properties */
+}
+
+.services_box:hover {
+    transform: scale(1.01);
+    animation: changeBackgroundColor 4s linear;
+}
+@keyframes changeBackgroundColor{
+    0% {
+            background: transparent;
+        }
+    
+        10% {
+            background: #1725541a;
+        }
+    
+        20% {
+            background: #17255433;
+        }
+    
+        40% {
+            background: #17255466;
+        }
+    
+        60% {
+            background: #17255499;
+        }
+    
+        80% {
+            background: #172554cc;
+        }
+    
+        100% {
+            background: #172554;
+        }
+}
+
+@keyframes showContent{
+    0%{
+     color: transparent;
+    }
+    10%{
+        color: rgba(255, 255, 255, 0.1);
+    }
+    20%{
+        color: rgba(255, 255, 255, 0.2);
+    }
+    40%{
+        color: rgba(255, 255, 255, 0.4);
+    }
+    60%{
+        color: rgba(255, 255, 255, 0.6);
+    }
+    80%{
+        color: rgba(255, 255, 255, 0.8);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes showContent {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
